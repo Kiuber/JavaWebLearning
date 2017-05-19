@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="javamailtest@139.199.16.32">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.1">
+    <root id="1"/>
+    <schema id="2" parent="1" name="carpool"/>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="javamailtest">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <schema id="7" parent="1" name="shopping"/>
+    <schema id="8" parent="1" name="test"/>
+    <table id="9" parent="4" name="user"/>
+    <column id="10" parent="9" name="id">
+      <Position>1</Position>
+      <Comment>用户id</Comment>
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="11" parent="9" name="username">
+      <Position>2</Position>
+      <Comment>用户名</Comment>
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="12" parent="9" name="email">
+      <Position>3</Position>
+      <Comment>用户邮箱</Comment>
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="13" parent="9" name="password">
+      <Position>4</Position>
+      <Comment>用户密码</Comment>
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="14" parent="9" name="state">
+      <Position>5</Position>
+      <Comment>用户激活状态：0表示未激活，1表示激活</Comment>
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="15" parent="9" name="code">
+      <Position>6</Position>
+      <Comment>激活码</Comment>
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="16" parent="9" name="nickname">
+      <Position>7</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <key id="17" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
